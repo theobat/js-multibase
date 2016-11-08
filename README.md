@@ -65,7 +65,7 @@ const value = multibase.isEncoded(bufOrString)
 The code published to npm that gets loaded on require is in fact an ES5 transpiled version with the right shims added. This means that you can require it and use with your favourite bundler without having to adjust asset management process.
 
 ```js
-const multibase = require('multiubase')
+const multibase = require('multibase')
 ```
 
 
@@ -100,7 +100,7 @@ The ```alphabet``` is the **ordered** set of defined symbols for a given base.
 
 The idea behind this is that several bases may have implementations from different locations/modules so it's useful to have an object (and a summary) of all of them in one location (hence the constants.js).
 
-All the supported bases are currently using the npm [base-x](https://github.com/cryptocoinjs/base-x) module as their implementation. It is using bitwise maipulation to go from one base to another, so this module does not support padding at the moment.
+All the supported bases are currently using the npm [base-x](https://github.com/cryptocoinjs/base-x) module as their implementation. It is using bitwise manipulation to go from one base to another, so this module does not support padding at the moment.
 
 ## Adding additional bases
 
